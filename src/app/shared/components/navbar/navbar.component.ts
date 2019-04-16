@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SideDrawerService } from '../../services/side-drawer/side-drawer.service';
+import { SideDrawerService } from '../side-drawer/side-drawer.service';
 
 @Component({
   selector: 'yc-navbar',
