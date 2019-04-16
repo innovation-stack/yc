@@ -1,0 +1,24 @@
+@import "../../../../app-variables";
+
+.toolbar {
+  background-color: $toolbar-background-color;
+  justify-content: space-between;
+
+  &__hamburger-container {
+    color: $toolbar-icon-color;
+    font-size: 1.7rem;
+  }
+
+  &__logo {
+    height: 60px;
+
+    img {
+      height: 60px;
+    }
+  }
+
+  &__account {
+    color: $toolbar-icon-color;
+    font-size: 1.7rem;
+  }
+}
