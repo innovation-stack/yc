@@ -1,0 +1,7 @@
+<button mat-list-item matRipple (click)="onToggleCategory()">
+  <div class="category__item">
+    <div class="category__item__label">{{ item.label }}</div>
+    <i class="category__item__arrow fas"
+      [ngClass]="{'fa-chevron-down': item.showSubCategory, 'fa-chevron-right': !item.showSubCategory}"></i>
+  </div>
+</button>

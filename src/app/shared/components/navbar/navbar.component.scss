@@ -1,5 +1,8 @@
 @import "../../../../app-variables";
 
+$toolbar-background-color: $peach-puff-color !default;
+$toolbar-icon-color: $logo-color !default;
+
 .toolbar {
   background-color: $toolbar-background-color;
   justify-content: space-between;
@@ -17,8 +20,8 @@
     }
   }
 
-  &__account {
-    color: $toolbar-icon-color;
-    font-size: 1.7rem;
+  &__shopping-cart {
+    color: #ff425e;
+    font-size: 1.5em;
   }
 }

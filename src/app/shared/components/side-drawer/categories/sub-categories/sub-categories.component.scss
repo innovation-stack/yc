@@ -1,0 +1,11 @@
+@import "../../../../../../app-variables";
+
+$sub-category-label-font: $roboto-regular-font !default;
+
+.sub-categories {
+  margin-left: 20px;
+
+  &__label {
+    font: 16px $sub-category-label-font;
+  }
+}

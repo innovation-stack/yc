@@ -1,6 +1,8 @@
 <mat-sidenav-container class="sidenav-container">
-  <mat-sidenav #sidenav>
-    <button mat-raised-button color="accent">Logout</button>
+  <mat-sidenav class="sidenav-container__sidenav" #sidenav>
+    <yc-user-info></yc-user-info>
+    <mat-divider></mat-divider>
+    <yc-categories></yc-categories>
   </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>

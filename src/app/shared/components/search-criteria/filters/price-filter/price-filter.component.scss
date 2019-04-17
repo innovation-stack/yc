@@ -1,0 +1,11 @@
+@import "../../../../../../app-variables";
+
+$price-filter-title-font: $roboto-regular-font !default;
+
+.price-filter {
+  &__title {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font: 16px $price-filter-title-font;
+  }
+}

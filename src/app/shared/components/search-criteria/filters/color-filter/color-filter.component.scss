@@ -1,0 +1,11 @@
+@import "../../../../../../app-variables";
+
+$color-filter-title-font: $roboto-regular-font !default;
+
+.color-filter {
+  &__title {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font: 16px $color-filter-title-font;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../../../../../../app-variables";
+
+$category-arrow-color: $light-gray-color !default;
+$category-label-font: $roboto-regular-font !default;
+
+.category {
+  &__item {
+    width: 100%;
+
+    &__label {
+      display: inline-block;
+      font: 18px $category-label-font;
+      width: 90%;
+    }
+
+    &__arrow {
+      color: $category-arrow-color;
+    }
+  }
+}

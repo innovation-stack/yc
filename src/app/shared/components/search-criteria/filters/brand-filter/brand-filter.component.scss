@@ -1,0 +1,14 @@
+@import "../../../../../../app-variables";
+
+$brand-filter-title-font: $roboto-regular-font !default;
+
+.brand-filter {
+  &__title {
+    margin-bottom: 5px;
+    margin-top: 0;
+    font: 16px $brand-filter-title-font;
+  }
+
+  &__controls {
+  }
+}

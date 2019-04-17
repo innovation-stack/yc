@@ -1,0 +1,38 @@
+@import "../../../../../app-variables";
+
+$profile-pic-border-color: $peach-puff-color !default;
+$profile-name-font: $roboto-regular-font !default;
+$user-info-background-color: $peach-puff-color !default;
+
+.user-info {
+  background-color: $user-info-background-color;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+  &__profile-pic {
+    border: 5px solid $profile-pic-border-color;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__name {
+    font: 16px $profile-name-font;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  &__logout {
+    margin-top: 8px;
+  }
+}

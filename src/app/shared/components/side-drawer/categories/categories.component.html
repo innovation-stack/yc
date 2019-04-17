@@ -1,0 +1,13 @@
+<mat-action-list class="categories">
+  <ng-container *ngFor="let category of categories">
+    <yc-category
+      [item]="category"
+      (toggleCategory)="toggleCategory($event)">
+    </yc-category>
+    <mat-divider></mat-divider>
+    <yc-sub-categories
+      *ngIf="category.showSubCategory"
+      [items]="category.subCategories">
+    </yc-sub-categories>
+  </ng-container>
+</mat-action-list>

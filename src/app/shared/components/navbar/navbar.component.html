@@ -6,8 +6,11 @@
   <a class="toolbar__logo">
     <img src="../../../assets/logo_transparent.png" alt="Logo">
   </a>
-  <a class="toolbar__account"
-    (click)="toggleDrawer()">
-    <i class="fas fa-user"></i>
-  </a>
+  <div class="toolbar__shopping-cart">
+    <i class="fas fa-shopping-cart"
+      matBadge="2"
+      matBadgePosition="after"
+      matBadgeColor="red">
+    </i>
+  </div>
 </mat-toolbar>
