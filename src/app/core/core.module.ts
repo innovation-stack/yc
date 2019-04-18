@@ -14,8 +14,10 @@ import {
   MatToolbarModule,
   MAT_CHECKBOX_CLICK_ACTION
 } from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const MATERIAL_MODULES = [
+  FlexLayoutModule,
   MatBadgeModule,
   MatButtonModule,
   MatCardModule,

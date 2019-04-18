@@ -1,0 +1,23 @@
+<div class="products">
+  <h2 class="products__title">
+    {{ title }}
+  </h2>
+  <div class="products__list"
+    fxLayout="row wrap"
+    fxLayoutWrap
+    fxLayoutGap="15px"
+    fxLayoutAlign="center">
+    <mat-card class="products__list__item"
+      *ngFor="let product of products">
+      <img class="products__list__item__image"
+        mat-card-image
+        [src]="product.imageUrl">
+      <mat-card-title class="products__list__item__name">
+        {{ product.name }}
+      </mat-card-title>
+      <mat-card-actions>
+        <button mat-raised-button color="accent">Add To Bag</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

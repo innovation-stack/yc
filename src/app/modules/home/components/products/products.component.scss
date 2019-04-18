@@ -1,0 +1,26 @@
+@import "../../../../../app-variables";
+
+$product-name-font: $roboto-regular-font !default;
+$product-title-font: $roboto-regular-font !default;
+
+.products {
+  margin-top: 10px;
+
+  &__title {
+    font: 16px $product-title-font;
+  }
+
+  &__list {
+    &__item {
+      margin-top: 10px;
+      &__image {
+        width: 186px;
+        height: 240px;
+      }
+
+      &__name {
+        font: 14px $product-name-font;
+      }
+    }
+  }
+}
