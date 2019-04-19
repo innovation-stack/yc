@@ -7,12 +7,14 @@ $product-title-font: $roboto-regular-font !default;
   margin-top: 10px;
 
   &__title {
-    font: 16px $product-title-font;
+    font: 20px $product-title-font;
+    margin: 0;
   }
 
   &__list {
     &__item {
       margin-top: 10px;
+
       &__image {
         width: 186px;
         height: 240px;
@@ -20,6 +22,13 @@ $product-title-font: $roboto-regular-font !default;
 
       &__name {
         font: 14px $product-name-font;
+      }
+
+      &__actions {
+
+        &__add-to-cart {
+          padding: 0 10px;
+        }
       }
     }
   }
