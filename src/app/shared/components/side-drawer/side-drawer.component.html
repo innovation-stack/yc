@@ -1,5 +1,8 @@
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav class="sidenav-container__sidenav" #sidenav>
+<mat-sidenav-container class="sidenav-container"
+  fxLayout="row">
+  <mat-sidenav class="sidenav-container__sidenav" #sidenav
+    fxFlex.lt-md="60%"
+    fxFlex.gt-md="20%">
     <yc-user-info></yc-user-info>
     <mat-divider></mat-divider>
     <yc-categories></yc-categories>

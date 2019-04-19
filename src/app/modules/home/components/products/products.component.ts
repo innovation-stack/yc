@@ -68,6 +68,18 @@ export class ProductsComponent {
       name: 'Wrogn',
       color: 'blue',
       imageUrl: '/assets/products/men/wrogn.jpg'
+    },
+    {
+      id: 10,
+      name: 'Roadster',
+      color: 'gray',
+      imageUrl: '/assets/products/men/roadster-gray.jpg'
+    },
+    {
+      id: 11,
+      name: 'Fido Dido',
+      color: 'pink',
+      imageUrl: '/assets/products/men/fido-dido.jpg'
     }
   ];
 }
