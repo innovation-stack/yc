@@ -1,0 +1,12 @@
+<FlexboxLayout
+  class="list-group-item category"
+  (tap)="onToggleCategory()">
+  <Label
+    class="category__name"
+    [text]="item.label">
+  </Label>
+  <Label
+    class="category__arrow"
+     [text]="item.showSubCategory ? '&#xf078;' : '&#xf054;'">
+  </Label>
+</FlexboxLayout>

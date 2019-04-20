@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./categories.component.scss']
 })
 export class CategoriesComponent {
+  selectedCategory;
   categories = [
     {
       id: 1,
@@ -66,8 +67,13 @@ export class CategoriesComponent {
 
   toggleCategory(selectedCategoryId: number) {
     const foundIndex = this.hideAllSubCategoriesExceptOne(selectedCategoryId);
+    this.selectedCategory = this.categories[foundIndex];
     if (foundIndex !== undefined && foundIndex >= 0) {
       this.categories[foundIndex].showSubCategory = true;
     }
+  }
+
+  goBackToCategories() {
+    this.selectedCategory = undefined;
   }
 }

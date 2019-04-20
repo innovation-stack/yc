@@ -1,22 +1,42 @@
-<StackLayout>
+<StackLayout class="navbar">
   <ActionBar
     [title]="title"
     (loaded)="onActionBarLoaded()">
-  <NavigationButton
-    *ngIf="canGoBack"
-    text="Back"
-    android.systemIcon="ic_menu_back"
-    (tap)="onGoBack()">
-  </NavigationButton>
-  <NavigationButton
-    icon="res://menu"
-    *ifAndroid
-    (tap)="toggleDrawer()">
-  </NavigationButton>
-  <ActionItem
-    *ifIos
-    ios.position="left">
-    <Label text="MENU"></Label>
-  </ActionItem>
+    <NavigationButton
+      *ngIf="canGoBack"
+      text="Back"
+      android.systemIcon="ic_menu_back"
+      (tap)="onGoBack()">
+    </NavigationButton>
+    <FlexboxLayout
+      flexDirection="row"
+      justifyContent="center"
+      alignItems="center">
+      <Image
+        src="res://logo_transparent"
+        class="navbar__logo">
+      </Image>
+    </FlexboxLayout>
+    <ng-container
+      *ngIf="hasMenu">
+      <NavigationButton
+        icon="res://menu"
+        *ifAndroid
+        (tap)="toggleDrawer()">
+      </NavigationButton>
+      <ActionItem
+        *ifIos
+        ios.position="left">
+        <Label text="MENU"></Label>
+      </ActionItem>
+    </ng-container>
+    <ActionItem
+      ios.position="right"
+      android.position="actionBar">
+      <Label
+        class="fa navbar__cart"
+        text="&#xf07a;">
+      </Label>
+    </ActionItem>
   </ActionBar>
 </StackLayout>

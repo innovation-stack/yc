@@ -1,0 +1,9 @@
+<ListView
+  class="list-group sub-categories"
+  [items]="items">
+  <ng-template let-item="item">
+    <StackLayout class="list-group-item">
+      <Label [text]="item.label"></Label>
+    </StackLayout>
+  </ng-template>
+</ListView>

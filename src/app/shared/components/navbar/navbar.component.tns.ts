@@ -18,6 +18,9 @@ export class NavbarComponent {
   @Input()
   showBackButton = true;
 
+  @Input()
+  hasMenu = true;
+
   constructor(
     private page: Page,
     private router: RouterExtensions,

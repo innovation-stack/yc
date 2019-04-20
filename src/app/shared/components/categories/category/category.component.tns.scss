@@ -1,0 +1,17 @@
+@import "../../../../../app-variables.tns";
+
+$category-name-font: $fontawesome-font !default;
+
+.category {
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__name {
+    font-size: 18;
+  }
+
+  &__arrow {
+    font-size: 15;
+    font-family: $category-name-font;
+  }
+}

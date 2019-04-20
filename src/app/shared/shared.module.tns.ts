@@ -8,6 +8,9 @@ import { ifAndroidDirective } from './directives/if-android/if-android.directive
 import { ifIosDirective } from './directives/if-ios/if-ios.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoryComponent } from './components/categories/category/category.component';
+import { SubCategoriesComponent } from './components/categories/sub-categories/sub-categories.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
 
 @NgModule({
@@ -15,7 +18,10 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
     ifAndroidDirective,
     ifIosDirective,
     NavbarComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CategoriesComponent,
+    CategoryComponent,
+    SubCategoriesComponent
   ],
   imports: [
     NativeScriptCommonModule,
@@ -26,7 +32,8 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
     ifAndroidDirective,
     ifIosDirective,
     NavbarComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CategoriesComponent
   ]
 })
 export class SharedModule {

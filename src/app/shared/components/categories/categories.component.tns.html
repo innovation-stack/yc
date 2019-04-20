@@ -1,0 +1,23 @@
+<ListView
+  *ngIf="!selectedCategory"
+  class="list-group categories"
+  [items]="categories">
+  <ng-template let-category="item">
+    <yc-category
+      [item]="category"
+      (toggleCategory)="toggleCategory($event)">
+    </yc-category>
+  </ng-template>
+</ListView>
+<StackLayout
+  *ngIf="selectedCategory && selectedCategory.subCategories"
+  orientation="vertical">
+  <Label
+    class="categories__back"
+    text="&#xf0a8;"
+    (tap)="goBackToCategories()">
+  </Label>
+  <yc-sub-categories
+    [items]="selectedCategory.subCategories">
+  </yc-sub-categories>
+</StackLayout>

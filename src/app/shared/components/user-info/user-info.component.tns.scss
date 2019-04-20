@@ -10,7 +10,7 @@ $user-info-background-color: $peach-puff-color !default;
 .user-info {
   background-color: $user-info-background-color;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
   padding: 10;
 
@@ -32,9 +32,6 @@ $user-info-background-color: $peach-puff-color !default;
     background-color: $logout-button-background-color;
     border-radius: 4;
     color: $logout-button-text-color;
-    margin-top: 8;
-    padding: 3;
     width: 100;
-    margin: auto;
   }
 }

@@ -1,0 +1,18 @@
+@import "../../../../app-variables.tns";
+
+$cart-font-family: $fontawesome-font !default;
+
+.navbar {
+
+  &__cart {
+    color: #000000;
+    font-size: 30;
+    padding-right: 20;
+    font-family: $cart-font-family;
+  }
+
+  &__logo {
+    width: 60;
+    height: 60;
+  }
+}
