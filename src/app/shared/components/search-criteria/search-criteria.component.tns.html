@@ -1,0 +1,26 @@
+<StackLayout class="search-criteria">
+  <FlexboxLayout
+    flexDirection="row"
+    justifyContent="space-between"
+    (tap)="toggleFilterContainer()"
+    class="search-criteria__filter-container">
+    <Label
+      text="Filters"
+      class="search-criteria__filter-container__title">
+    </Label>
+    <Label
+      [text]="expandFilter ? '&#xf077;': '&#xf078;'"
+      class="search-criteria__filter-container__arrow">
+    </Label>
+  </FlexboxLayout>
+  <StackLayout
+    *ngIf="expandFilter">
+    <FlexboxLayout
+      flexDirection="row"
+      justifyContent="flex-start">
+      <yc-color-filter></yc-color-filter>
+      <yc-brand-filter></yc-brand-filter>
+      <yc-price-filter></yc-price-filter>
+    </FlexboxLayout>
+  </StackLayout>
+</StackLayout>

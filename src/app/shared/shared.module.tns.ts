@@ -11,6 +11,10 @@ import { UserInfoComponent } from './components/user-info/user-info.component';
 import { CategoriesComponent } from './components/categories/categories.component';
 import { CategoryComponent } from './components/categories/category/category.component';
 import { SubCategoriesComponent } from './components/categories/sub-categories/sub-categories.component';
+import { SearchCriteriaComponent } from './components/search-criteria/search-criteria.component.tns';
+import { ColorFilterComponent } from './components/search-criteria/filters/color-filter/color-filter.component';
+import { BrandFilterComponent } from './components/search-criteria/filters/brand-filter/brand-filter.component';
+import { PriceFilterComponent } from './components/search-criteria/filters/price-filter/price-filter.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
 
 @NgModule({
@@ -21,7 +25,11 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
     UserInfoComponent,
     CategoriesComponent,
     CategoryComponent,
-    SubCategoriesComponent
+    SubCategoriesComponent,
+    SearchCriteriaComponent,
+    ColorFilterComponent,
+    BrandFilterComponent,
+    PriceFilterComponent
   ],
   imports: [
     NativeScriptCommonModule,
@@ -33,7 +41,8 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
     ifIosDirective,
     NavbarComponent,
     UserInfoComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    SearchCriteriaComponent
   ]
 })
 export class SharedModule {
