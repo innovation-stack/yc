@@ -7,9 +7,9 @@ import { TabViewItemDef } from 'nativescript-angular/directives/tab-view';
   styleUrls: ['./home-tabs.component.scss']
 })
 export class HomeTabsComponent {
-  orderHistoryTabItem: TabViewItemDef = {
-    title: 'Order History',
-    iconSource: 'res://order_history'
+  productsTabItem: TabViewItemDef = {
+    title: 'Products',
+    iconSource: 'res://products'
   };
   giftCardTabItem: TabViewItemDef = {
     title: 'Gift Cards',
