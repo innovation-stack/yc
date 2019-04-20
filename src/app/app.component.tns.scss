@@ -1,0 +1,10 @@
+@import "../app-variables.tns";
+
+$drawer-container-background-color: $white-color !default;
+
+.drawer-container {
+  background-color: $drawer-container-background-color;
+  flex-direction: column;
+  padding: 20;
+  horizontal-align: left;
+}

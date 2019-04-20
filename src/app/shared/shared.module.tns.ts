@@ -9,7 +9,6 @@ import { ifIosDirective } from './directives/if-ios/if-ios.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
 
-
 @NgModule({
   declarations: [
     NavbarComponent,

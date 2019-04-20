@@ -10,7 +10,8 @@
   </NavigationButton>
   <NavigationButton
     icon="res://menu"
-    *ifAndroid>
+    *ifAndroid
+    (tap)="toggleDrawer()">
   </NavigationButton>
   <ActionItem
     *ifIos

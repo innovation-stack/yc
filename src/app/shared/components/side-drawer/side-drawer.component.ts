@@ -1,4 +1,9 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
+import {
+  Component,
+  ViewChild,
+  OnInit,
+  OnDestroy
+} from '@angular/core';
 import { MatSidenav } from '@angular/material';
 import { SideDrawerService, SideDrawerData } from './side-drawer.service';
 import { Subscription } from 'rxjs';
@@ -8,7 +13,7 @@ import { Subscription } from 'rxjs';
   templateUrl: './side-drawer.component.html',
   styleUrls: ['./side-drawer.component.scss']
 })
-export class SideDrawerComponent implements OnInit {
+export class SideDrawerComponent implements OnInit, OnDestroy {
   private drawerSubscription: Subscription;
 
   @ViewChild('sidenav')
@@ -24,5 +29,9 @@ export class SideDrawerComponent implements OnInit {
         this.sidenav.toggle();
       }
     });
+  }
+
+  ngOnDestroy() {
+    this.drawerSubscription.unsubscribe();
   }
 }
