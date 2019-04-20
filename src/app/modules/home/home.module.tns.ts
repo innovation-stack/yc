@@ -4,10 +4,12 @@ import { NativeScriptCommonModule } from 'nativescript-angular/common';
 import { SharedModule } from '../../shared/shared.module.tns';
 import { HomeRoutingModule } from './home-routing.module.tns';
 import { HomeComponent } from './pages/home/home.component';
+import { HomeTabsComponent } from './components/home-tabs/home-tabs.component.tns';
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    HomeTabsComponent
   ],
   imports: [
     NativeScriptCommonModule,

@@ -5,7 +5,6 @@ import { HomeRoutingModule } from './home-routing.module';
 
 import { SharedModule } from '../../../app/shared/shared.module';
 import { HomeComponent } from './pages/home/home.component';
-import { CoreModule } from '../../../app/core/core.module';
 import { ProductsComponent } from './components/products/products.component';
 
 @NgModule({
@@ -15,7 +14,6 @@ import { ProductsComponent } from './components/products/products.component';
   ],
   imports: [
     CommonModule,
-    CoreModule,
     HomeRoutingModule,
     SharedModule
   ],

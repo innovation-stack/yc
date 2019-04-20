@@ -1,6 +1,23 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import {
+  MatBadgeModule,
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatListModule,
+  MatRippleModule,
+  MatSidenavModule,
+  MatToolbarModule,
+  MAT_CHECKBOX_CLICK_ACTION
+} from '@angular/material';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { CoreModule } from '../core/core.module';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
@@ -14,6 +31,22 @@ import { FiltersComponent } from './components/search-criteria/filters/filters.c
 import { ColorFilterComponent } from './components/search-criteria/filters/color-filter/color-filter.component';
 import { BrandFilterComponent } from './components/search-criteria/filters/brand-filter/brand-filter.component';
 import { PriceFilterComponent } from './components/search-criteria/filters/price-filter/price-filter.component';
+
+const MATERIAL_MODULES = [
+  FlexLayoutModule,
+  MatBadgeModule,
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatListModule,
+  MatRippleModule,
+  MatSidenavModule,
+  MatToolbarModule
+];
 
 @NgModule({
   declarations: [
@@ -32,9 +65,11 @@ import { PriceFilterComponent } from './components/search-criteria/filters/price
   imports: [
     CommonModule,
     RouterModule,
+    ...MATERIAL_MODULES,
     CoreModule
   ],
   exports: [
+    ...MATERIAL_MODULES,
     NavbarComponent,
     SideDrawerComponent,
     SearchCriteriaComponent,

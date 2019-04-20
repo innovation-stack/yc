@@ -1,0 +1,10 @@
+@import "../../../../../app-variables.tns";
+
+$android-selected-tab-background-color: $logo-color !default;
+$selected-tab-text-color: $logo-color !default;
+
+TabView {
+  android-selected-tab-highlight-color: $android-selected-tab-background-color;
+  selected-tab-text-color: $selected-tab-text-color;
+  selected-color: $selected-tab-text-color;
+}

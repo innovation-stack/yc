@@ -1,0 +1,21 @@
+<StackLayout>
+  <ActionBar
+    [title]="title"
+    (loaded)="onActionBarLoaded()">
+  <NavigationButton
+    *ngIf="canGoBack"
+    text="Back"
+    android.systemIcon="ic_menu_back"
+    (tap)="onGoBack()">
+  </NavigationButton>
+  <NavigationButton
+    icon="res://menu"
+    *ifAndroid>
+  </NavigationButton>
+  <ActionItem
+    *ifIos
+    ios.position="left">
+    <Label text="MENU"></Label>
+  </ActionItem>
+  </ActionBar>
+</StackLayout>
