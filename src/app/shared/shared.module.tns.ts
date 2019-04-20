@@ -7,21 +7,26 @@ import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angul
 import { ifAndroidDirective } from './directives/if-android/if-android.directive';
 import { ifIosDirective } from './directives/if-ios/if-ios.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
 
 @NgModule({
   declarations: [
-    NavbarComponent,
     ifAndroidDirective,
-    ifIosDirective
+    ifIosDirective,
+    NavbarComponent,
+    UserInfoComponent
   ],
   imports: [
     NativeScriptCommonModule,
     NativeScriptUISideDrawerModule
   ],
   exports: [
+    NativeScriptUISideDrawerModule,
+    ifAndroidDirective,
+    ifIosDirective,
     NavbarComponent,
-    NativeScriptUISideDrawerModule
+    UserInfoComponent
   ]
 })
 export class SharedModule {

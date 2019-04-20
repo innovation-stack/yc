@@ -7,7 +7,7 @@ import {
 import {
   Device,
   platformNames
-} from 'platform';
+} from 'tns-core-modules/platform';
 import { DEVICE } from 'nativescript-angular/platform-providers';
 
 @Directive({

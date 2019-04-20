@@ -19,13 +19,13 @@ import {
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { CoreModule } from '../core/core.module';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { SideDrawerComponent } from './components/side-drawer/side-drawer.component';
-import { UserInfoComponent } from './components/side-drawer/user-info/user-info.component';
-import { CategoriesComponent } from './components/side-drawer/categories/categories.component';
-import { CategoryComponent } from './components/side-drawer/categories/category/category.component';
-import { SubCategoriesComponent } from './components/side-drawer/categories/sub-categories/sub-categories.component';
+import { UserInfoComponent } from './components/user-info/user-info.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { CategoryComponent } from './components/categories/category/category.component';
+import { SubCategoriesComponent } from './components/categories/sub-categories/sub-categories.component';
 import { SearchCriteriaComponent } from './components/search-criteria/search-criteria.component';
 import { FiltersComponent } from './components/search-criteria/filters/filters.component';
 import { ColorFilterComponent } from './components/search-criteria/filters/color-filter/color-filter.component';
@@ -81,7 +81,11 @@ export class SharedModule {
     return {
       ngModule: SharedModule,
       providers: [
-        SideDrawerService
+        SideDrawerService,
+        {
+          provide: MAT_CHECKBOX_CLICK_ACTION,
+          useValue: 'check'
+        }
       ]
     }
   }
