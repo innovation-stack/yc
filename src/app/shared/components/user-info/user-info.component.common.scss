@@ -1,0 +1,31 @@
+@import "../../../../app-variables.tns";
+
+$logout-button-background-color: $accent-color !default;
+$logout-button-text-color: $white-color !default;
+$profile-pic-border-color: $peach-puff-color !default;
+$profile-name-text-color: $black-color !default;
+$profile-name-font: $roboto-regular-font !default;
+$user-info-background-color: $peach-puff-color !default;
+
+.user-info {
+  background-color: $user-info-background-color;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10;
+
+  &__name {
+    color: $profile-name-text-color;
+    text-transform: uppercase;
+    font: 18 $profile-name-font;
+    margin: auto;
+    margin-top: 10;
+  }
+
+  &__logout {
+    background-color: $logout-button-background-color;
+    border-radius: 4;
+    color: $logout-button-text-color;
+    width: 100;
+  }
+}

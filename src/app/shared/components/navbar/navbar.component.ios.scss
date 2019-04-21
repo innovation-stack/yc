@@ -1,1 +1,8 @@
 @import "navbar.component.common";
+
+.navbar {
+
+  &__hamburger {
+    font-size: 20;
+  }
+}

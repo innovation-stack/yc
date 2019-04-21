@@ -1,0 +1,10 @@
+@import "user-info.component.common";
+
+.user-info {
+  &__avatar {
+    border-radius: 100%;
+    background: url("res://me") no-repeat;
+    width: 100;
+    height: 100;
+  }
+}

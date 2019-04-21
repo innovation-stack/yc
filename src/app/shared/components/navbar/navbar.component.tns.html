@@ -1,5 +1,6 @@
 <StackLayout class="navbar">
   <ActionBar
+    class="navbar__action-bar"
     [title]="title"
     (loaded)="onActionBarLoaded()">
     <NavigationButton
@@ -20,14 +21,17 @@
     <ng-container
       *ngIf="hasMenu">
       <NavigationButton
+        class="navbar__hamburger"
         icon="res://menu"
         *ifAndroid
         (tap)="toggleDrawer()">
       </NavigationButton>
       <ActionItem
+        class="navbar__hamburger"
         *ifIos
-        ios.position="left">
-        <Label text="MENU"></Label>
+        ios.position="left"
+        (tap)="toggleDrawer()">
+        <Label text="&#xf0c9;"></Label>
       </ActionItem>
     </ng-container>
     <ActionItem

@@ -4,6 +4,9 @@
     "id": "org.nativescript.ycrimss",
     "tns-android": {
       "version": "5.1.0"
+    },
+    "tns-ios": {
+      "version": "5.1.1"
     }
   },
   "version": "0.0.0",

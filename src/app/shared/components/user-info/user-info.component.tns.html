@@ -1,9 +1,16 @@
 <FlexboxLayout class="user-info">
-  <Image
-    class="user-info__profile-pic"
-    src="~/assets/me.png"
-    stretch="none">
-  </Image>
+  <StackLayout
+    class="user-info__avatar"
+    *ifIos>
+  </StackLayout>
+  <StackLayout
+    *ifAndroid
+    class="user-info__avatar">
+    <Image
+      stretch="none"
+      src="~/assets/me.png">
+    </Image>
+  </StackLayout>
   <Label
     class="user-info__name"
     text="Anup Vasudeva">

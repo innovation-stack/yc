@@ -1,13 +1,22 @@
 @import "../../../../app-variables.tns";
 
+$action-bar-background-color: $peach-puff-color !default;
+$action-bar-hamburger-font: $fontawesome-font !default;
 $cart-font-family: $fontawesome-font !default;
 
 .navbar {
 
+  &__action-bar {
+    background-color: $action-bar-background-color;
+  }
+
+  &__hamburger {
+    font-family: $action-bar-hamburger-font;
+  }
+
   &__cart {
     color: #000000;
     font-size: 30;
-    padding-right: 20;
     font-family: $cart-font-family;
   }
 
