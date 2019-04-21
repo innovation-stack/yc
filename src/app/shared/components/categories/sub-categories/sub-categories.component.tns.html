@@ -1,9 +1,20 @@
 <ListView
   class="list-group sub-categories"
-  [items]="items">
+  [items]="items"
+  iosEstimatedRowHeight="60">
   <ng-template let-item="item">
-    <StackLayout class="list-group-item">
-      <Label [text]="item.label"></Label>
-    </StackLayout>
+    <FlexboxLayout
+      class="list-group-item sub-categories__sub-category"
+      flexDirection="column"
+      justifyContent="center">
+      <Label
+        [text]="item.label"
+        class="sub-categories__sub-category__name">
+      </Label>
+      <StackLayout
+        *ifIos
+        class="hr-light sub-categories__sub-category__separator">
+      </StackLayout>
+    </FlexboxLayout>
   </ng-template>
 </ListView>

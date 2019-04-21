@@ -1,0 +1,16 @@
+@import "../../../../../app-variables.tns";
+@import "sub-categories.component.common";
+
+$sub-category-separator-color: $white-color !default;
+
+.sub-categories {
+  separator-color: $sub-category-separator-color;
+
+  &__sub-category {
+
+    &__name {
+      padding-left: 10;
+      padding-bottom: 10;
+    }
+  }
+}

@@ -1,13 +1,16 @@
 <RadSideDrawer>
-  <StackLayout
+  <GridLayout
+    rows="auto,*"
+    columns="*"
     class="drawer-container"
     tkDrawerContent>
-    <yc-user-info></yc-user-info>
-    <!-- <yc-categories
-      row="1"
-      col="0">
-    </yc-categories> -->
-  </StackLayout>
+    <StackLayout row="0" col="0">
+      <yc-user-info></yc-user-info>
+    </StackLayout>
+    <StackLayout row="1" col="0">
+      <yc-categories></yc-categories>
+    </StackLayout>
+  </GridLayout>
   <StackLayout tkMainContent>
     <page-router-outlet></page-router-outlet>
   </StackLayout>

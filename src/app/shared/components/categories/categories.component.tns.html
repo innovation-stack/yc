@@ -1,7 +1,9 @@
+
 <ListView
   *ngIf="!selectedCategory"
   class="list-group categories"
-  [items]="categories">
+  [items]="categories"
+  iosEstimatedRowHeight="60">
   <ng-template let-category="item">
     <yc-category
       [item]="category"
