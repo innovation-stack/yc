@@ -1,0 +1,29 @@
+@import "../../../../app-variables.tns";
+
+$search-criteria-border-color: $black-color !default;
+$filter-arrow-font: $fontawesome-font !default;
+$filter-arrow-text-color: $black-color !default;
+$filter-title-text-color: $black-color !default;
+
+.search-criteria {
+  border-width: 1;
+  border-style: solid;
+  border-radius: 5;
+  border-color: $search-criteria-border-color;
+  padding: 10;
+  margin: 10 5;
+
+  &__filter-container {
+
+    &__title {
+      color: $filter-title-text-color;
+      font-size: 20;
+    }
+
+    &__arrow {
+      color: $filter-arrow-text-color;
+      font: 15 $filter-arrow-font;
+      padding-top: 5;
+    }
+  }
+}

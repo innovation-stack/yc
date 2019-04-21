@@ -1,0 +1,16 @@
+@import "color-filter.component.common";
+
+.color-filter {
+
+  &__title {
+    font-size: 15;
+  }
+
+  &__entries {
+
+    &__name {
+      font-size: 13;
+      width: 35;
+    }
+  }
+}

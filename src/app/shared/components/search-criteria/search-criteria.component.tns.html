@@ -13,14 +13,7 @@
       class="search-criteria__filter-container__arrow">
     </Label>
   </FlexboxLayout>
-  <StackLayout
+  <yc-filters
     *ngIf="expandFilter">
-    <FlexboxLayout
-      flexDirection="row"
-      justifyContent="flex-start">
-      <yc-color-filter></yc-color-filter>
-      <yc-brand-filter></yc-brand-filter>
-      <yc-price-filter></yc-price-filter>
-    </FlexboxLayout>
-  </StackLayout>
+  </yc-filters>
 </StackLayout>

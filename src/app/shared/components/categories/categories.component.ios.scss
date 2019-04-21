@@ -1,0 +1,7 @@
+@import "categories.component.common";
+
+$category-separator-color: $white-color !default;
+
+.categories {
+  separator-color: $category-separator-color;
+}

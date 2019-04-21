@@ -1,0 +1,21 @@
+@import "../../../../../../app-variables.tns";
+
+$brand-filter-title-font: $roboto-regular-font !default;
+$brand-filter-title-color: $black-color !default;
+
+.brand-filter {
+  margin-top: 10;
+
+  &__title {
+    color: $brand-filter-title-color;
+    font: 18 $brand-filter-title-font;
+  }
+
+  &__entries {
+    margin-top: 7;
+
+    &__name {
+      width: 40;
+    }
+  }
+}

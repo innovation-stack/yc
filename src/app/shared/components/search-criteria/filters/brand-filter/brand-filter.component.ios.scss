@@ -1,0 +1,15 @@
+@import "brand-filter.component.common";
+
+.brand-filter {
+  &__title {
+    font-size: 15;
+  }
+
+  &__entries {
+
+    &__name {
+      font-size: 13;
+      width: 35;
+    }
+  }
+}

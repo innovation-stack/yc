@@ -1,0 +1,15 @@
+@import "../../../../app-variables.tns";
+
+$back-button-color: $black-color !default;
+$back-button-font: $fontawesome-font !default;
+$category-separator-color: $white-color !default;
+
+.categories {
+
+  &__back {
+    color: $back-button-color;
+    font-size: 30;
+    font-family: $back-button-font;
+    padding: 15;
+  }
+}

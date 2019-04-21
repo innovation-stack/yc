@@ -1,0 +1,15 @@
+@import "search-criteria.component.common";
+
+.search-criteria {
+  &__filter-container {
+
+    &__title {
+      font-size: 16;
+    }
+
+    &__arrow {
+      font: 14 $filter-arrow-font;
+      padding-top: 0;
+    }
+  }
+}

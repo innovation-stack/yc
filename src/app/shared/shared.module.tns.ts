@@ -16,6 +16,7 @@ import { SearchCriteriaComponent } from './components/search-criteria/search-cri
 import { ColorFilterComponent } from './components/search-criteria/filters/color-filter/color-filter.component';
 import { BrandFilterComponent } from './components/search-criteria/filters/brand-filter/brand-filter.component';
 import { PriceFilterComponent } from './components/search-criteria/filters/price-filter/price-filter.component';
+import { FiltersComponent } from './components/search-criteria/filters/filters.component';
 import { SideDrawerService } from './components/side-drawer/side-drawer.service';
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
     SearchCriteriaComponent,
     ColorFilterComponent,
     BrandFilterComponent,
-    PriceFilterComponent
+    PriceFilterComponent,
+    FiltersComponent
   ],
   imports: [
     NativeScriptCommonModule,
