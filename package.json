@@ -36,6 +36,7 @@
     "hammerjs": "^2.0.8",
     "nativescript-angular": "~7.1.0",
     "nativescript-theme-core": "~1.0.4",
+    "nativescript-ui-listview": "^6.2.0",
     "nativescript-ui-sidedrawer": "^6.0.0",
     "reflect-metadata": "~0.1.8",
     "rxjs": "~6.3.3",

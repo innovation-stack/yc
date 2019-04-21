@@ -1,0 +1,40 @@
+@import "../../../../../app-variables.tns";
+
+$add-to-cart-background-color: $accent-color !default;
+$add-to-cart-text-color: $white-color !default;
+$product-name-color: $black-color !default;
+$product-name-font: $roboto-regular-font !default;
+$products-title-color: $black-color !default;
+$products-title-font: $roboto-regular-font !default;
+
+.products {
+
+  &__title {
+    color: $products-title-color;
+    font: 22 $products-title-font;
+  }
+
+  &__list {
+
+    &__item {
+      margin-top: 10;
+
+      &__image {
+        width: 186;
+        height: 240;
+      }
+
+      &__name {
+        color: $product-name-color;
+        font: 18 $product-name-font;
+      }
+
+      &__add-to-cart {
+        color: $add-to-cart-text-color;
+        background-color: $add-to-cart-background-color;
+        border-radius: 4;
+        font-size: 12;
+      }
+    }
+  }
+}

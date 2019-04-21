@@ -1,0 +1,39 @@
+<Label
+  class="products__title"
+  text="Top Wear"
+  horizontalAlignment="center">
+</Label>
+<RadListView
+  class="products__list"
+  [items]="products">
+
+  <ng-template
+    tkListItemTemplate
+    let-product="item">
+    <FlexboxLayout
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      class="products__list__item">
+      <Image
+        [src]="product.imageUrl"
+        class="products__list__item__image">
+      </Image>
+      <Label
+        [text]="product.name"
+        class="products__list__item__name">
+      </Label>
+      <Button
+        class="btn btn-rounded-sm products__list__item__add-to-cart"
+        text="Add To Cart">
+      </Button>
+    </FlexboxLayout>
+  </ng-template>
+
+  <ListViewGridLayout
+    tkListViewLayout
+    scrollDirection="Vertical"
+    ios:itemHeight="200"
+    spanCount="2">
+  </ListViewGridLayout>
+</RadListView>

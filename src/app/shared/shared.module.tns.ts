@@ -4,6 +4,7 @@ import {
 } from '@angular/core';
 import { NativeScriptCommonModule } from 'nativescript-angular/common';
 import { NativeScriptUISideDrawerModule } from 'nativescript-ui-sidedrawer/angular/side-drawer-directives';
+import { NativeScriptUIListViewModule } from 'nativescript-ui-listview/angular/listview-directives';
 import { ifAndroidDirective } from './directives/if-android/if-android.directive';
 import { ifIosDirective } from './directives/if-ios/if-ios.directive';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -33,10 +34,12 @@ import { SideDrawerService } from './components/side-drawer/side-drawer.service'
   ],
   imports: [
     NativeScriptCommonModule,
-    NativeScriptUISideDrawerModule
+    NativeScriptUISideDrawerModule,
+    NativeScriptUIListViewModule
   ],
   exports: [
     NativeScriptUISideDrawerModule,
+    NativeScriptUIListViewModule,
     ifAndroidDirective,
     ifIosDirective,
     NavbarComponent,
