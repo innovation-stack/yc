@@ -2,6 +2,11 @@
 
 .navbar {
 
+  &__logo {
+    width: 50;
+    height: 50;
+  }
+
   &__hamburger {
     font-size: 20;
   }
